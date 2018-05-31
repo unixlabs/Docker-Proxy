@@ -5,6 +5,12 @@ Docker Proxy: Cache your images on your local data center save your Bandwidth.  
 Docker Proxy works as caching server during your pull reqest to an image, its save the image in the cache, in case you can run again pull request then you can you find these iamges in your local registry. its work as mirror and save all iamges that you pull through the proxy.  
 # Prerequisite 
 > Running Docker with Docker Compose
+```sh
+curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` > ./docker-compose
+mv ./docker-compose /usr/bin/docker-compose
+chmod +x /usr/bin/docker-compose
+
+```
 # Installation 
 ```sh
 git clone https://github.com/unixlabs/Docker-Proxy.git
